@@ -11,6 +11,9 @@ fi
 PROJECT_PATH="$PWD"
 PROJECT_NAME="$1"
 
+# remove git folder
+rm -rf "${PROJECT_PATH}/.git"
+
 # renames folders & files
 find ${PROJECT_PATH} -name "__APP_NAME__*" -type d |xargs rename -v "s/__APP_NAME__/${PROJECT_NAME}/"
 find ${PROJECT_PATH} -name "__APP_NAME__*" -type f |xargs rename -v "s/__APP_NAME__/${PROJECT_NAME}/"
