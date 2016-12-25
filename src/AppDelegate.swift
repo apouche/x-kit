@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 fileprivate extension AppDelegate {
     func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = StartViewController()
         window?.makeKeyAndVisible()
     }
 }

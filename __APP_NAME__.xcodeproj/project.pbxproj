@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		048C466E1BAEC3C900A1E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C46661BAEC3C900A1E8EA /* AppDelegate.swift */; };
-		048C466F1BAEC3C900A1E8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C46681BAEC3C900A1E8EA /* ViewController.swift */; };
+		048C466F1BAEC3C900A1E8EA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C46681BAEC3C900A1E8EA /* StartViewController.swift */; };
 		04E3A9331E1000320043F42D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A9321E1000320043F42D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -16,7 +16,7 @@
 		048C46481BAEC1DF00A1E8EA /* __APP_NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __APP_NAME__.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C46641BAEC3C900A1E8EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048C46661BAEC3C900A1E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		048C46681BAEC3C900A1E8EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		048C46681BAEC3C900A1E8EA /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		04E3A9321E1000320043F42D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 		048C46671BAEC3C900A1E8EA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				048C46681BAEC3C900A1E8EA /* ViewController.swift */,
+				048C46681BAEC3C900A1E8EA /* StartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048C466F1BAEC3C900A1E8EA /* ViewController.swift in Sources */,
+				048C466F1BAEC3C900A1E8EA /* StartViewController.swift in Sources */,
 				048C466E1BAEC3C900A1E8EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
