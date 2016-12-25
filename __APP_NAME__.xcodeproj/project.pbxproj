@@ -10,6 +10,8 @@
 		048C466E1BAEC3C900A1E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C46661BAEC3C900A1E8EA /* AppDelegate.swift */; };
 		048C466F1BAEC3C900A1E8EA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C46681BAEC3C900A1E8EA /* StartViewController.swift */; };
 		04E3A9331E1000320043F42D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A9321E1000320043F42D /* Images.xcassets */; };
+		04E3A9351E1004870043F42D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A9341E1004870043F42D /* images */; };
+		04E3A9381E1004F60043F42D /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A9371E1004F60043F42D /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		048C46661BAEC3C900A1E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048C46681BAEC3C900A1E8EA /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		04E3A9321E1000320043F42D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04E3A9341E1004870043F42D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		04E3A9371E1004F60043F42D /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		048C465D1BAEC3C900A1E8EA /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				04E3A9371E1004F60043F42D /* fonts */,
+				04E3A9341E1004870043F42D /* images */,
 				04E3A9321E1000320043F42D /* Images.xcassets */,
 			);
 			path = assets;
@@ -99,6 +105,7 @@
 			buildPhases = (
 				048C46441BAEC1DF00A1E8EA /* Sources */,
 				048C46451BAEC1DF00A1E8EA /* Frameworks */,
+				04E3A9361E1004AF0043F42D /* Copy Custom Resources */,
 				048C46461BAEC1DF00A1E8EA /* Resources */,
 			);
 			buildRules = (
@@ -149,11 +156,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E3A9381E1004F60043F42D /* fonts in Resources */,
+				04E3A9351E1004870043F42D /* images in Resources */,
 				04E3A9331E1000320043F42D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E3A9361E1004AF0043F42D /* Copy Custom Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Custom Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh scripts/assets.sh";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		048C46441BAEC1DF00A1E8EA /* Sources */ = {
