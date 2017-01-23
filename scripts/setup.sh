@@ -9,6 +9,7 @@ if [ "$1" == "" ]; then
 fi
 
 PROJECT_PATH="$PWD"
+ASSETS_PATH="$PROJECT_PATH/assets"
 PROJECT_NAME="$1"
 
 # remove git folder
@@ -21,3 +22,4 @@ find ${PROJECT_PATH} -name "__APP_NAME__*" -type f |xargs rename -v "s/__APP_NAM
 # replace all occurences of __APP_NAME__ in all files
 find ${PROJECT_PATH} -type f|xargs grep -lIE "[-_]{2}APP[-_]NAME[-_]{2}" |xargs sed -i.remove -E "s/[-_]{2}APP[-_]NAME[-_]{2}/${PROJECT_NAME}/g"
 find ${PROJECT_PATH} -type f -name "*.remove"|xargs rm -rf
+find ${ASSETS_PATH} -type f -name ".gitignore"|xargs rm -rf
