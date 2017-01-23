@@ -7,6 +7,9 @@ inhibit_all_warnings!
 # open source pods
 source 'https://github.com/CocoaPods/Specs.git'
 
+target "__APP_NAME__" do
+	
+end
 
 # pod scripts
 post_install do |installer_representation|
